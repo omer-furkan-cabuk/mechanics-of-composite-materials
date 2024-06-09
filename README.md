@@ -1,1 +1,2 @@
-# mechanics-of-composite-materials
+# Mechanics of Composite Materials with MATLAB
+
