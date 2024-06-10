@@ -120,8 +120,8 @@ Using MATLAB, the following components were determined:
 - The three components of strain at the interface locations with respect to the principal material system.
 - The three components of stress in each layer with respect to the principal material system.
 
-    ![Question 7.1 Output](images/question_7_4/output.png)
-![Question 7.1 Output](images/question_7_4/output2.png)
+    ![Question 7.4 Output](images/question_7_4/output.png)
+![Question 7.4 Output](images/question_7_4/output2.png)
 
 
 
@@ -129,7 +129,8 @@ Using MATLAB, the following components were determined:
 
 In this problem, a glass-reinforced polymer composite laminate with a total thickness of 0.600 mm, stacked as a [+45/0/−30]T laminate, is considered. The three layers are of equal thickness, and the A, B, and D matrices were calculated.
 
-![[Question 7.4 Output](images/stion_8_8/output.png)
+![Question 8.8 Output](images/stion_8_8/output.png)
+
 
 ### MATLAB Problem 10.6 Explanation
 
@@ -139,7 +140,7 @@ In this problem, the maximum value of α > 0 for stresses of σx = 3α, σy = �
 
 Problem 10.6 was solved using the Tsai-Wu failure theory instead of the maximum stress failure theory.
 
-![[Question 7.4 Output](images/question_10_9/output.png)
+![Question 10.9 Output](images/question_10_9/output.png)
 
 ### Adding Output Visuals
 
