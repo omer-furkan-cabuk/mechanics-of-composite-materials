@@ -56,4 +56,21 @@ function y = OrthotropicCompliance(E1, E2, E3, NU12, NU23, NU13, G12, G23, G13)
     y = [1/E1 -NU12/E1 -NU13/E1 0 0 0 ; -NU12/E1 1/E2 -NU23/E2 0 0 0 ;
          -NU13/E1 -NU23/E2 1/E3 0 0 0 ; 0 0 0 1/G23 0 0 ; 0 0 0 0 1/G13 0 ;
          0 0 0 0 0 1/G12];
+
+### Example: Linear Elastic Stress-Strain Relations
+
+#### Problem Statement
+
+Consider a 60-mm cube made of graphite-reinforced polymer composite material subjected to a tensile force of 100 kN perpendicular to the fiber direction, directed along the 2-direction. The cube is free to expand or contract. Use MATLAB to determine the changes in the 60-mm dimensions of the cube.
+
+#### Solution
+
+First, the normal stress in the 2-direction is calculated in GPa:
+
+```matlab
+sigma2 = 100 / (60 * 60);
+sigma = [0 sigma2 0 0 0 0]';
+S = OrthotropicCompliance(155.0, 12.10, 12.10, 0.248, 0.458, 0.248, 4.40, 3.20, 4.40);
+epsilon = S * sigma;
+
 end
