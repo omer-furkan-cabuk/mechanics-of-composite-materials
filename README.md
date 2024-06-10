@@ -120,8 +120,10 @@ Using MATLAB, the following components were determined:
 - The three components of strain at the interface locations with respect to the principal material system.
 - The three components of stress in each layer with respect to the principal material system.
 
-  ![[Question 7.4 Output](images/question_7_4/output.png)
-  ![[Question 7.4 Output](images/question_7_4/output2.png)
+    ![Question 7.1 Output](images/question_7_4/output.png)
+![Question 7.1 Output](images/question_7_4/output2.png)
+
+
 
 ### MATLAB Problem 8.8 Explanation
 
