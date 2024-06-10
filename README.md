@@ -104,7 +104,6 @@ Using MATLAB, the following components were determined:
 
   ![Composite Material Example](https://github.com/omer-furkan-cabuk/images/7.1.jpeg)
 
-
 ### MATLAB Problem 7.4 Explanation
 
 In this problem, a glass-reinforced polymer composite laminate with a total thickness of 0.900 mm, stacked as a [±30/0]s laminate, is considered. The six layers of the laminate are of equal thickness and are deformed so that at a point (x, y) on the reference surface, the following strains and curvatures are present:
