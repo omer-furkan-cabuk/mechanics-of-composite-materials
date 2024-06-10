@@ -102,7 +102,7 @@ Using MATLAB, the following components were determined:
 - The three components of strain at the interface locations with respect to the principal material system.
 - The three components of stress in each layer with respect to the principal material system.
 
-  ![Composite Material Example](https://github.com/mechanics-of-composite-materials/images/7.1.jpeg)
+  ![Composite Material Example](images/7.1.jpeg)
 
 ### MATLAB Problem 7.4 Explanation
 
