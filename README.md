@@ -56,6 +56,7 @@ function y = OrthotropicCompliance(E1, E2, E3, NU12, NU23, NU13, G12, G23, G13)
     y = [1/E1 -NU12/E1 -NU13/E1 0 0 0 ; -NU12/E1 1/E2 -NU23/E2 0 0 0 ;
          -NU13/E1 -NU23/E2 1/E3 0 0 0 ; 0 0 0 1/G23 0 0 ; 0 0 0 0 1/G13 0 ;
          0 0 0 0 0 1/G12];
+```
 
 ### Example: Linear Elastic Stress-Strain Relations
 
@@ -74,3 +75,66 @@ S = OrthotropicCompliance(155.0, 12.10, 12.10, 0.248, 0.458, 0.248, 4.40, 3.20, 
 epsilon = S * sigma;
 
 end
+```
+
+Next, the changes in length in each direction are calculated by multiplying the strain by the dimension in each direction:
+
+```matlab
+
+d1 = epsilon(1) * 60;
+d2 = epsilon(2) * 60;
+d3 = epsilon(3) * 60;
+
+```
+
+### MATLAB Problem 7.1 Explanation
+
+In this problem, a glass-reinforced polymer composite laminate with a total thickness of 0.600 mm, stacked as a [0/90]s laminate, is considered. The four layers of the laminate are of equal thickness and are deformed so that at a point (x, y) on the reference surface, the following strains and curvatures are present:
+
+\[ \epsilon_x^0 = 500 \times 10^{-6} \]
+\[ \epsilon_y^0 = \gamma_{xy}^0 = \kappa_x^0 = \kappa_y^0 = \kappa_{xy}^0 = 0 \]
+
+Using MATLAB, the following components were determined:
+- The three components of strain at the interface locations.
+- The three components of stress in each layer.
+- The stress distribution along the depth of the laminate for each component.
+- The force and moment resultants in the laminate.
+- The three components of strain at the interface locations with respect to the principal material system.
+- The three components of stress in each layer with respect to the principal material system.
+
+### MATLAB Problem 7.4 Explanation
+
+In this problem, a glass-reinforced polymer composite laminate with a total thickness of 0.900 mm, stacked as a [±30/0]s laminate, is considered. The six layers of the laminate are of equal thickness and are deformed so that at a point (x, y) on the reference surface, the following strains and curvatures are present:
+
+\[ \kappa_x = 2.5 \, \text{m}^{-1} \]
+\[ \epsilon_x^0 = \epsilon_y^0 = \gamma_{xy}^0 = \kappa_y^0 = \kappa_{xy}^0 = 0 \]
+
+Using MATLAB, the following components were determined:
+- The three components of strain at the interface locations.
+- The three components of stress in each layer.
+- The stress distribution along the depth of the laminate for each component.
+- The force and moment resultants in the laminate.
+- The three components of strain at the interface locations with respect to the principal material system.
+- The three components of stress in each layer with respect to the principal material system.
+
+### MATLAB Problem 8.8 Explanation
+
+In this problem, a glass-reinforced polymer composite laminate with a total thickness of 0.600 mm, stacked as a [+45/0/−30]T laminate, is considered. The three layers are of equal thickness, and the A, B, and D matrices were calculated.
+
+### MATLAB Problem 10.6 Explanation
+
+In this problem, the maximum value of α > 0 for stresses of σx = 3α, σy = −2α, and τxy = 5α applied to a 30°-lamina of glass/epoxy was determined. The maximum stress failure theory was used to perform the calculations.
+
+### MATLAB Problem 10.9 Explanation
+
+Problem 10.6 was solved using the Tsai-Wu failure theory instead of the maximum stress failure theory.
+
+### Adding Output Visuals
+
+To add visual representations of the output, please include your images in the `output` directory of this repository and reference them in this section.
+
+### Results and Conclusion
+
+The results from the MATLAB computations provide insights into the stress-strain relationships, failure theories, and overall behavior of composite materials under various loading conditions. This project serves as a practical guide for students and professionals to understand and apply the mechanics of composite materials using MATLAB.
+
+By following the examples and utilizing the provided MATLAB functions, users can gain a deeper understanding of the theoretical and practical aspects of composite material mechanics.
